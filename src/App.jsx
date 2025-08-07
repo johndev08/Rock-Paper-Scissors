@@ -8,7 +8,7 @@ function App() {
   const [message, setMessage] = useState("Choose your move!");
   const [playerScore, setPlayerScore] = useState(0);
   const [computerScore, setcomputerScore] = useState(0);
-  
+
 
   const handleRockClick = () => {
     const moves = ["rock", "paper", "scissors"];
@@ -64,6 +64,8 @@ function App() {
         <h3>player: {playerScore}</h3>
         <h3>{computerScore}:Computer</h3>
       </div>
+            <h2>{message}</h2>
+
       <div>
         <img
           src={rocklogo}
@@ -87,7 +89,6 @@ function App() {
           style={{ cursor: "pointer" }}
         />
       </div>
-      <h2>{message}</h2>
       <button onClick={handleresetClick}>Reset</button>
     </>
   );
